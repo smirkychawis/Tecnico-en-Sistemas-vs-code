@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrarse</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            align-items: center;
+            background: url(https://th.bing.com/th/id/R.ccad58399c0d53b1bbc7303cf7f1ca7a?rik=n1s%2b1yDNFlzSFQ&pid=ImgRaw&r=0) no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .wrapper {
+            width: 420px;
+            background: transparent;
+            color: white;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+            border: 2px solid rgba(255, 225, 225, .2);
+            border-radius: 10px;
+            padding: 30px 40px;
+        }
+        .wrapper h1 {
+            text-align: center;
+            font-size: 40px;
+        }
+        .wrapper .input-box {
+            width: 100%;
+            height: 50px;
+            margin: 30px 0;
+            position: relative;
+        }
+        .input-box input {
+            height: 100%;
+            width: 100%;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            border: 2px solid rgba(255, 225, 225, .2);
+            border-radius: 40px;
+            color: white;
+            font-size: 16px;
+            padding: 20px 45px 20px 20px;
+        }
+        .input-box input::placeholder {
+            color: white;
+        }
+        .input-box i {
+            position: absolute;
+            right: 20px;
+            transform: translateY(-50%);
+            top: 50%;
+            font-size: 20px;
+        }
+        .wrapper .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14.5px;
+            margin: -15px 0 15px;
+        }
+        .remember-forgot label input {
+            margin-right: 3px;
+            accent-color: white;
+        }
+        .remember-forgot a {
+            color: white;
+            text-decoration: none;
+        }
+        .remember-forgot a:hover {
+            text-decoration: underline;
+        }
+        .wrapper .btn {
+            width: 100%;
+            height: 45px;
+            background: white;
+            border: none;
+            border-radius: 40px;
+            outline: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+            cursor: pointer;
+            font-size: 16px;
+            color: #333;
+            font-weight: 600;
+        }
+        .wrapper .register-link {
+            font-size: 14.5px;
+            margin: 20px 0 15px;
+            text-align: center;
+        }
+        .register-link p a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+        }
+        .register-link p a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <form action="#">
+            <h1>Registrate</h1>
+            <div class="input-box register">
+                <input type="text" placeholder="Usuario" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Correo Electronico" required>
+                <i class='bx bxs-envelope'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Contraseña" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Recordarme</label>
+                <a href="#">Terminos y Condiciones</a>
+            </div>
+            <button type="submit" class="btn">Registrarse</button>
+
+            <div class="register-link">
+                <p>¿Ya tienes una cuenta?<a href="#"> Inicia Sesión</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
